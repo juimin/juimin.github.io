@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/juimin/juimin.github.io#readme",
   "dependencies": {
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
     "webpack": "^5.62.1"
   }
 }
