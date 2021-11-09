@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/juimin/juimin.github.io/issues"
   },
-  "homepage": "https://github.com/juimin/juimin.github.io#readme"
+  "homepage": "https://github.com/juimin/juimin.github.io#readme",
+  "dependencies": {
+    "webpack": "^5.62.1"
+  }
 }

@@ -8,6 +8,8 @@ List of software required for working on this project
 
 ### Front End
 
+Dev/Prod dependencies listed in `package.json`
+
 | Tooling      | Version |
 | ----------- | ----------- |
 | [nvm](https://github.com/nvm-sh/nvm)      |    0.39.0+       |
