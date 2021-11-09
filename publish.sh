@@ -11,16 +11,16 @@ git branch --set-upstream-to=origin/gh-pages
 git pull
 
 # Remove everything
-rm -rf ./* ./.*
+rm -rf ./*
 
 cp /tmp/.personalsite/* ./
 
 git add .
 git commit -m "publishing command"
-git status
+git push
 
 # Switch back to the master branch
-# git checkout -B master
+git checkout -B master
 
 # Clean up
 rm -r /tmp/.personalsite
