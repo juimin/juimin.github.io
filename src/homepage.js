@@ -1,7 +1,11 @@
 import React from "react";
 
 const Homepage = () => {
-    return <h1>This is my React app</h1>;
+    return <div>
+        <h1>Derek Wang</h1>
+        <span>Personal Website and other stuff</span>
+
+    </div>;
 }
 
 export default Homepage;
