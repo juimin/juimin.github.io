@@ -8,6 +8,10 @@ import Typography from '@mui/material/Typography';
 import Code from '@mui/icons-material/Code';
 import ContactPage from '@mui/icons-material/ContactPage';
 import HomeIcon from '@mui/icons-material/Home';
+import MusicNote from '@mui/icons-material/MusicNote';
+import Photo from '@mui/icons-material/Photo';
+import Restaurant from '@mui/icons-material/Restaurant';
+import SportsEsports from '@mui/icons-material/SportsEsports';
 
 import Homepage from "./homepage";
 import Portfolio from "./portfolio";
@@ -66,8 +70,12 @@ export default function App() {
                 sx={{ borderRight: 1, borderColor: 'divider' }}
             >
                 <Tab icon={<HomeIcon />} {...a11yProps(0)} />
-                <Tab icon={<Code />} {...a11yProps(0)} />
-                <Tab icon={<ContactPage />} {...a11yProps(2)} />
+                <Tab icon={<Code />} {...a11yProps(1)} />
+                <Tab icon={<Photo />} {...a11yProps(2)} />
+                <Tab icon={<MusicNote />} {...a11yProps(3)} />
+                <Tab icon={<SportsEsports />} {...a11yProps(4)} />
+                <Tab icon={<Restaurant />} {...a11yProps(5)} />
+                <Tab icon={<ContactPage />} {...a11yProps(6)} />
             </Tabs>
             <TabPanel value={value} index={0}>
                 <Homepage />
@@ -75,7 +83,7 @@ export default function App() {
             <TabPanel value={value} index={1}>
                 <Portfolio />
             </TabPanel>
-            <TabPanel value={value} index={2}>
+            <TabPanel value={value} index={6}>
                 <Contact />
             </TabPanel>
         </Box>
