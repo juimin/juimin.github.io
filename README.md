@@ -2,6 +2,8 @@
 
 React based personal website
 
+https://juimin.github.io/
+
 ## Dependencies and Tooling
 
 List of software required for working on this project
