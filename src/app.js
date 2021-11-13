@@ -85,7 +85,7 @@ export default function App() {
             <TabPanel value={value} index={1}>
                 <Portfolio />
             </TabPanel>
-            <TabPanel value={value} index={6}>
+            <TabPanel value={value} index={7}>
                 <Contact />
             </TabPanel>
         </Box>
