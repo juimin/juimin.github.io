@@ -3,7 +3,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
-import Typography from '@mui/material/Typography';
 
 import Brush from '@mui/icons-material/Brush';
 import Code from '@mui/icons-material/Code';
@@ -14,9 +13,15 @@ import Photo from '@mui/icons-material/Photo';
 import Restaurant from '@mui/icons-material/Restaurant';
 import SportsEsports from '@mui/icons-material/SportsEsports';
 
-import Homepage from "./homepage";
-import Portfolio from "./portfolio";
+import Artwork from "./art";
 import Contact from "./contact";
+import Food from "./food";
+import Games from "./games";
+import Homepage from "./homepage";
+import Music from './music';
+import Photography from './photography';
+import Portfolio from "./portfolio";
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -84,6 +89,21 @@ export default function App() {
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Portfolio />
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+                <Photography />
+            </TabPanel>
+            <TabPanel value={value} index={3}>
+                <Music />
+            </TabPanel>
+            <TabPanel value={value} index={4}>
+                <Games />
+            </TabPanel>
+            <TabPanel value={value} index={5}>
+                <Artwork />
+            </TabPanel>
+            <TabPanel value={value} index={6}>
+                <Food />
             </TabPanel>
             <TabPanel value={value} index={7}>
                 <Contact />
