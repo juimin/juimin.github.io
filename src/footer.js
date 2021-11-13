@@ -29,7 +29,7 @@ const Footer = () => {
         <div style={phantom} />
         <div style={style}>
             <Typography variant="body1" gutterBottom>
-                d95wang@gmail.com • /in/d95wang/ • github.com/juimin
+                /in/d95wang/ • github.com/juimin
             </Typography>
         </div>
     </div>
