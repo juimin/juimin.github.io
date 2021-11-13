@@ -6,16 +6,13 @@ import Tabs from '@mui/material/Tabs';
 
 import Brush from '@mui/icons-material/Brush';
 import Code from '@mui/icons-material/Code';
-import ContactPage from '@mui/icons-material/ContactPage';
 import HomeIcon from '@mui/icons-material/Home';
 import MusicNote from '@mui/icons-material/MusicNote';
 import Photo from '@mui/icons-material/Photo';
-import Restaurant from '@mui/icons-material/Restaurant';
 import SportsEsports from '@mui/icons-material/SportsEsports';
 
 import Artwork from "./art";
-import Contact from "./contact";
-import Food from "./food";
+import Footer from "./footer";
 import Games from "./games";
 import Homepage from "./homepage";
 import Music from './music';
@@ -77,12 +74,11 @@ export default function App() {
             >
                 <Tab icon={<HomeIcon />} {...a11yProps(0)} />
                 <Tab icon={<Code />} {...a11yProps(1)} />
-                <Tab icon={<Photo />} {...a11yProps(2)} />
+                <Tab icon={<Brush />} {...a11yProps(2)} />
                 <Tab icon={<MusicNote />} {...a11yProps(3)} />
-                <Tab icon={<SportsEsports />} {...a11yProps(4)} />
-                <Tab icon={<Brush />} {...a11yProps(5)} />
-                <Tab icon={<Restaurant />} {...a11yProps(6)} />
-                <Tab icon={<ContactPage />} {...a11yProps(7)} />
+                <Tab icon={<Photo />} {...a11yProps(4)} />
+                <Tab icon={<SportsEsports />} {...a11yProps(5)} />
+
             </Tabs>
             <TabPanel value={value} index={0}>
                 <Homepage />
@@ -91,23 +87,18 @@ export default function App() {
                 <Portfolio />
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <Photography />
+                <Artwork />
             </TabPanel>
             <TabPanel value={value} index={3}>
                 <Music />
             </TabPanel>
             <TabPanel value={value} index={4}>
-                <Games />
+                <Photography />
             </TabPanel>
             <TabPanel value={value} index={5}>
-                <Artwork />
+                <Games />
             </TabPanel>
-            <TabPanel value={value} index={6}>
-                <Food />
-            </TabPanel>
-            <TabPanel value={value} index={7}>
-                <Contact />
-            </TabPanel>
+            <Footer />
         </Box>
     );
 }
