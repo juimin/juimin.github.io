@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 
+import Brush from '@mui/icons-material/Brush';
 import Code from '@mui/icons-material/Code';
 import ContactPage from '@mui/icons-material/ContactPage';
 import HomeIcon from '@mui/icons-material/Home';
@@ -30,7 +31,7 @@ function TabPanel(props) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    {children}
                 </Box>
             )}
         </div>
@@ -74,8 +75,9 @@ export default function App() {
                 <Tab icon={<Photo />} {...a11yProps(2)} />
                 <Tab icon={<MusicNote />} {...a11yProps(3)} />
                 <Tab icon={<SportsEsports />} {...a11yProps(4)} />
-                <Tab icon={<Restaurant />} {...a11yProps(5)} />
-                <Tab icon={<ContactPage />} {...a11yProps(6)} />
+                <Tab icon={<Brush />} {...a11yProps(5)} />
+                <Tab icon={<Restaurant />} {...a11yProps(6)} />
+                <Tab icon={<ContactPage />} {...a11yProps(7)} />
             </Tabs>
             <TabPanel value={value} index={0}>
                 <Homepage />
