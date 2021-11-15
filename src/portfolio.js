@@ -17,7 +17,6 @@ const Portfolio = () => {
             <DiReact size="50" color="black" />
         </div>
     </div>
-    return <h1>Projects</h1>;
 }
 
 export default Portfolio;
