@@ -1,7 +1,8 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import Link from '@mui/material/Link';
 
-import { FaMailBulk } from "react-icons/fa";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 
 
@@ -29,7 +30,12 @@ const Footer = () => {
         <div style={phantom} />
         <div style={style}>
             <Typography variant="body1" gutterBottom>
-                /in/d95wang/ • github.com/juimin
+                <Link href="https://www.linkedin.com/in/d95wang/">
+                    <LinkedIn />
+                </Link>
+                <Link href="https://github.com/juimin">
+                    <GitHub />
+                </Link>
             </Typography>
         </div>
     </div>
